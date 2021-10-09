@@ -2,7 +2,7 @@ const stringTasks = {
    /**
     * вернуть строку, где все слова из исходной строки будут начинаться с заглавных букв
     */
-   capitalizeWords(srcStr) { },
+   capitalizeWords(srcStr) { //comment},
 
    /**
     *
