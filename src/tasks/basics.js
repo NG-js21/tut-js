@@ -65,4 +65,3 @@ const basicsTask = {
         return numbers.map(num => (num / sum).toPrecision(2))
     },
 };
-console.log(basicsTask.sum(1, 2, 3));
