@@ -12,4 +12,28 @@ const objectsTask = {
         return inverted
     },
 
-};
+
+    /**
+ * на вход подается объект
+ * функция должна сделать и вернуть тн глубокую копию этого объекта
+ * вся логика должна быть написана самостоятельно, так же нужно учесть что некоторые свойства копируемого объекта могут быть массивами
+ */
+
+    deepCopy(obj) {
+        let copy = {};
+        for (let key in obj) {
+            if (typeof obj[key] === 'object' && obj[key] !== null) {
+                if (Array.isArray(obj[key])) {
+                    copy[key] = obj[key].slice();
+                }
+                else { copy[key] = deepCopy(obj[key]); }
+
+                continue
+            }
+
+            copy[key] = obj[key];
+        }
+        return copy;
+    }
+}
+
