@@ -3,6 +3,8 @@
  * step - шаг, по-умолчанию = 1, необязательный параметр
  * ф-ция должна создать объект, сделать его итерируемым(iterable) и вернуть
  */
-const createIterable = (from, to, step = 1) => {
+const createIterable = (from, to, step=1) => {
 
 };
+
+
